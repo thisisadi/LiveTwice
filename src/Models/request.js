@@ -17,5 +17,5 @@ const requestSchema=new mongoose.Schema({
       },
 })
 
-const request_organ = new mongoose.model("User", requestSchema);
+const request_organ = new mongoose.model("Req", requestSchema);
 module.exports = request_organ;

@@ -29,5 +29,5 @@ const availSchema=new mongoose.Schema({
       },
 })
 
-const avail_organ = new mongoose.model("User", availSchema);
+const avail_organ = new mongoose.model("Avail", availSchema);
 module.exports = avail_organ;

@@ -4,6 +4,8 @@ const app = express()
 require("./db/conn");
 
 const User = require("./Models/Users");
+const Avail=require("./Models/available");
+const Req=require("./Models/request");
 
 const port = 5000
 
@@ -47,7 +49,17 @@ app.post('/views/signin.ejs', async (req, res) => {
         res.status(400).send(error);
     }
 })
+app.post('/views/donate_organ1.ejs',async(req,res)=>{
+        const donor_name=req.body.pname;
+        const donor_age=req.body.page;
+        const organ_name=req.body.organ;
+        const blood_group=req.body.blood;
+        console.log(donor_name);
+        console.log(donor_age);
+        console.log(organ_name);
+        console.log(blood_group);
 
+})
 app.get('/views/requestmade.ejs', (req, res) => {
     res.render('requestmade')
 })
