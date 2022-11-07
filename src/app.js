@@ -7,7 +7,7 @@ const User = require("./Models/Users");
 const Avail=require("./Models/available");
 const Req=require("./Models/request");
 
-const port = 5000
+const port = 5050
 
 // Static Files
 app.use(express.static('public'))
@@ -98,6 +98,20 @@ app.get('/views/available_organs.ejs', (req, res) => {
 
 app.get('/views/acceptorgan.ejs', (req, res) => {
     res.render('acceptorgan')
+})
+app.post('/login', async (req, res) => {
+    try {
+        const email = req.body.email;
+        const pass = req.body.password;
+        const userEmail = await User.findOne({ Email: email });
+        if (userEmail.Password === pass) {
+            res.status(201).render('homepage');
+        } else {
+            res.send("Invalid Login Credentials");
+        }
+    } catch (error) {
+        res.status(400).send("Invalid Login Credentials");
+    }
 })
 
 // Listen on Port 3000
