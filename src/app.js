@@ -40,7 +40,7 @@ app.post('/views/signin.ejs', async (req, res) => {
             res.status(201).render('homepage');
 
         } else {
-            console.lo("Password doesn't match!");
+            console.log("Password doesn't match!");
         }
 
     } catch (error) {
