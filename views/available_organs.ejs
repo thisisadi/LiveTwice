@@ -1,0 +1,247 @@
+<html>
+<style>
+    body {
+        background-color: #e74e63;
+    }
+
+    #topbar {
+        text-align: left;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    h1 {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    #f1 {
+        width: 100%;
+        height: 9%;
+        margin: auto;
+        border-radius: 15px;
+        background-color: rgb(255, 184, 184);
+    }
+
+    #f2 {
+        margin: auto;
+        width: 95%;
+        height: 90%;
+        border-radius: 15px;
+        background-color: rgb(255, 184, 184);
+        font-size: 30px;
+    }
+
+    #user {
+        text-align: right;
+        margin-top: 30px;
+        margin-right: 55px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    form {
+        text-align: left;
+    }
+
+    .list {
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    select {
+        background-color: white;
+    }
+
+    select:hover {
+        background-color: #e74e63;
+        color: white;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        /* border-color: #dddddd; */
+        border-collapse: separate;
+        border-radius: 0px;
+        width: 100%;
+        height: 70%;
+        /* Overflow-x:scroll;
+        Overflow-y:scroll; */
+    }
+
+    td,
+    th {
+        /* border: 1px solid #dddddd; */
+        height: 10%;
+        text-align: left;
+        font-size: 30px;
+        padding: 8px;
+        background-color: white;
+    }
+
+    th {
+        background-color: #e74e63;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type="button"] {
+        margin: 20;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 40px;
+        color: white;
+        background-color: grey;
+    }
+
+    input[type="button"]:hover {
+        color: black;
+        background-color: white;
+    }
+
+    button {
+        border-radius: 100px;
+        margin-top: 0px;
+        margin-left: 80%;
+    }
+
+    #homepage {
+        height: 20%;
+        width: 20%;
+
+    }
+</style>
+
+<body>
+    <center>
+        <div id="topbar">
+            <fieldset id="f1">
+                <div style="float: left;" width="50%">
+                    <img src="D:\VIT\Coding\HTML\LiveTWICE\pics\logo2.jpg" alt="logo">
+                </div>
+                <div style="float: right;" width="50%">
+                    <p id="user">Welcome User</p>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset id="f2">
+                <h1>Filter By:</h1>
+
+                <form action="" method="post">
+                    <select name="organ" class="list">
+                        <option selected disabled>Choose organ</option>
+                        <option value="heart">Heart</option>
+                        <option value="intestine">Intestines</option>
+                        <option value="kidneys">Kidneys</option>
+                        <option value=“lungs”>Lungs</option>
+                        <option value=“liver”>Liver</option>
+                        <option value=“pancreas”>Pancreas</option>
+                    </select>
+                    <select name="state" class="list">
+                        <option selected disabled>Choose state</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="tamilnadu">Tamilnadu</option>
+                        <option value="gujrat">gujrat</option>
+                        <option value=“haryana”>Haryana</option>
+                        <option value=“rajasthan”>Rajasthan</option>
+                        <option value=“meghalaya”>Meghalaya</option>
+                    </select>
+                    <select name="city" class="list">
+                        <option selected disabled>Choose city</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="indore">Indore</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value=“lucknow”>Lucknow</option>
+                        <option value=“mumbai”>Mumbai</option>
+                        <option value=“jaipur”>Jaipur</option>
+                    </select>
+                    <select name="blood" class="list">
+                        <option selected disabled>Choose Blood group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value=“B-”>B-</option>
+                        <option value=“O+”>O+</option>
+                        <option value=“O-”>O-</option>
+                        <option value=“AB+”>AB+</option>
+                        <option value=“AB-”>AB-</option>
+                    </select>
+                    <input type="button" value="Search">
+                    <br>
+
+                    <table border="1" class="center">
+                        <tr>
+                            <th>Hospital Name</th>
+                            <th>Donor Age</th>
+                            <th>Prescription</th>
+                            <th>Blood Group</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+            <input type="button" value="Request an organ" onclick="redirect()">
+            <button><img src="D:\VIT\Coding\HTML\LiveTWICE\pics\home.png" alt="homepage_icon" id="homepage" title="Go to Homepage"
+                    onclick="xyz()"></button>
+        </div>
+        </div>
+    </center>
+    <script>
+        function redirect() {
+            location.replace("D:/VIT/Coding/HTML/LiveTWICE/request_organ1.html");
+        }
+    function xyz()
+           {
+              location.replace("D:/VIT/Coding/HTML/LiveTWICE/homepage.html");
+           }
+       
+    </script>
+</body>
+
+</html>

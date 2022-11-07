@@ -1,0 +1,168 @@
+<html>
+<style>
+    body {
+        background-color: #e74e63;
+    }
+
+    #topbar {
+        text-align: left;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 80px;
+    }
+
+    h2 {
+        text-decoration: underline;
+        margin-bottom: 50px;
+    }
+
+    #f1 {
+        width: 100%;
+        height: 9%;
+        margin: auto;
+        border-radius: 15px;
+        background-color: rgb(255, 184, 184);
+    }
+
+    #f2 {
+        margin: auto;
+        width: 40%;
+        height: 90%;
+        border-radius: 15px;
+        background-color: rgb(255, 184, 184);
+        font-size: 15px;
+    }
+
+    #user {
+        text-align: right;
+        margin-top: 10px;
+        margin-right: 55px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    input,
+    select {
+        padding: 10px;
+        margin: 20px;
+        border-radius: 15px;
+        border-color: white;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(94, 94, 94);
+        background-color: whitesmoke;
+        /* align-items: center; */
+    }
+
+    select:hover {
+        background-color: #e74e63;
+        color: white;
+    }
+
+    label {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 25px;
+        margin-top: 100px;
+    }
+
+    input[type="file"] {
+        margin: 1px;
+        margin-left: 22px;
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border-radius: 15px;
+        padding: 5px 180px;
+        outline: none;
+        white-space: nowrap;
+        cursor: pointer;
+        text-shadow: 1px 1px #fff;
+    }
+
+    input[type="button"] {
+        margin: 20px;
+        margin-left: 30%;
+
+    }
+
+    input[type="button"]:hover {
+        color: white;
+        background-color: rgb(93, 91, 91);
+    }
+
+    #donate_img {
+        height: 30%;
+        width: 30%;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #animate {
+        animation-name: example;
+        animation-duration: 2s;
+    }
+
+    @keyframes example {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: .5;
+        }
+
+        50% {
+            opacity: .75;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <center>
+        <div id="topbar">
+            <fieldset id="f1">
+                <div style="float: left;" width="50%">
+                    <img src="D:\VIT\Coding\HTML\LiveTWICE\pics\logo2.jpg" alt="logo">
+                </div>
+                <div style="float: right;" width="50%">
+                    <p id="user">Welcome User</p>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset id="f2">
+                <p id="donate_img">
+                    <img src="D:\VIT\Coding\HTML\LiveTWICE\pics\tick.png" alt="donated successfully" id="animate">
+                </p>
+                <p id="message">
+                <h1>Organ is successfully <br> verified</h1>
+                </p>
+                <button style="width:200px; height:50px; margin-left:200px; background-color: #e74e63; ">
+                    <a style="color:white; text-decoration:none;" href="D:/VIT/Coding/HTML/LiveTWICE/donateorgan.html">
+                    Schedule Organ Pickup
+                </button>
+               
+                </form>
+            </fieldset>
+        </div>
+        </div>
+    </center>
+</body>
+
+</html>

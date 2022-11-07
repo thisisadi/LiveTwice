@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <style>
+        #f1 {
+            background-color: white;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 100%;
+            padding: 0px;
+        }
+
+        #logo {
+
+            margin-left: 0px;
+            margin-top: 0px;
+            float: left;
+            width: 40%;
+            height: 100%;
+            border-radius: 15px;
+            background-color: rgb(233, 82, 89);
+            font-size: 15px;
+            z-index: -1;
+            overflow: auto;
+            border: none;
+        }
+
+        input {
+            border-top: 1px;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(233, 82, 89);">
+
+    <fieldset id="logo">
+        <center>
+            <p style="margin-top:38px; text-decoration:underline; font-size:35px;color:white"> LiveTWICE</p>
+
+            <img style="width:450px; " src="/pics/biglogomain.png" alt="img not available">
+            <p style="margin-top:20px; font-size:30px;color:white"> Organ Donation <br />Platform</p>
+        </center>
+    </fieldset>
+
+    <fieldset id="f1">
+        <center>
+            <br />
+            <h2>CREATE ACCOUNT </h2>
+
+            <button style="background-color: white; border-color:rgb(233, 82, 89); border-radius:10px">
+                <img style="width:40px; " src="/pics/google.png">
+                <p style="float:right">Sign in with Google</p>
+
+            </button>
+            <br /> <br />
+            <h3 style="color: grey;">-OR-</h3>
+            <br /> <br />
+            <form action="/views/signin.ejs" method="post">
+                <input type="text" name="name" placeholder="Full Name" size="50" autofocus required>
+                <br /><br /><br /><br />
+                <input type="number" name="age" placeholder="Age" size="50" autofocus required>
+                <br /><br /><br /><br />
+                <input type="text" name="bloodGroup" placeholder="Blood Group" size="50" autofocus required>
+                <br /><br /><br /><br />
+                <input type="email" name="email" placeholder="Email Address" size="50" required>
+                <br /><br /><br /><br />
+                <input type="password" name="password" placeholder="Password" size="50" required>
+                <br /><br /><br /><br />
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" size="50" required>
+                <br /><br /><br /><br /><br />
+
+                <button type="submit"
+                    style="background-color:rgb(233, 82, 89); border:1px; width:370px; height:40px; font-size:20px; color:white; border-radius:10px;">
+                    <a style="text-decoration: none; color:white;" href="views/homepage.ejs">
+                        Create Account
+                </button>
+
+
+                <br /><br />
+                <a style="text-decoration: none; color:black" href="views/login.ejs">Already
+                    have an account? <u> Log In</u></a>
+
+            </form>
+
+        </center>
+
+    </fieldset>
+
+</body>
+
+</html>

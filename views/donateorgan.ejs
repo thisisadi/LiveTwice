@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <style>
+        #f1 {
+            width: 100%;
+            height: 9%;
+            margin: auto;
+            border-radius: 15px;
+            background-color: rgb(255, 184, 184);
+        }
+
+        #map {
+            margin: auto;
+            float: left;
+            width: 40%;
+            height: 100%;
+            border-radius: 15px;
+            background-color: rgb(255, 184, 184);
+            font-size: 15px;
+        }
+
+
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        input {
+            border-radius: 20px;
+            background-color: rgb(255, 176, 177);
+            color: black;
+            height: 40px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: rgb(233, 82, 89);">
+
+    <div>
+        <fieldset id="f1">
+            <div style="float: left;" width="50%">
+                <img src="D:\VIT\Coding\HTML\LiveTWICE\pics\logo2.jpg" alt="logo">
+            </div>
+            <div style="float: right;" width="50%">
+                <p>
+                <h1>Welcome User</h1>
+                </p>
+            </div>
+        </fieldset>
+        <br />
+
+        <fieldset id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.9974040965!2d77.35073640425163!3d12.95384771722866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1664746829264!5m2!1sen!2sin"
+                width="600" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </fieldset>
+
+        <fieldset style="background-color: rgb(255, 184, 184); border-radius:20px; height:100%">
+            <br />
+            <fieldset style="background-color:rgb(233, 82, 89); border-radius:20px">
+                <center style="color: white">
+                    <h2> Choose location</h2>
+                </center>
+                <form method="post">
+                    <input type="text" name="ad1" placeholder="Address Line1" size="50" autofocus required>
+                    <input style="position: right; margin-left:30px" type="text" name="ad2" placeholder="Address Line2"
+                        size="50" required>
+                    <br /><br />
+
+                    <input type="text" name="landmark" placeholder="Landmark" required>
+                    <input style="position: right; margin-left:232px" type="text" name="state" placeholder="State"
+                        size="30" required>
+                    <br /> <br />
+
+                    <input type="text" name="City" placeholder="City" required>
+                    <input style="position: right; margin-left:232px" type="text" name="country" placeholder="Country"
+                        size="30" required>
+
+
+            </fieldset>
+
+            <br /> <br />
+            <center>
+                <fieldset style="background-color:rgb(233, 82, 89); border-radius:20px; width:500px; height:200px">
+                    <center style="color: white">
+                        <h2> Choose date and time </h2>
+                    </center>
+
+                    <input style="width: 150px;" type="date" id="date" name="date" required>
+                    <input style="width: 150px; position: right; margin-left:150px" type="time" id="time" name="time"
+                        required>
+                    <br /><br />
+                    <input style="outline: none; border-bottom:none; position: left" type="text" name="hospital"
+                        placeholder="Name of the Hospital" required>
+                </fieldset>
+                <br /><br />
+
+
+                <button style="width:300px; height:30px; border-radius:10px; background-color:#F1908C;cursor:pointer; ">
+                    <a style="text-decoration:none;color:white; font-size:20px"
+                        href="D:\VIT\Coding\HTML\LiveTWICE\homepage.html"> Confirm
+                </button>
+
+
+            </center>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

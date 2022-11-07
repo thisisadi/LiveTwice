@@ -1,0 +1,189 @@
+<html>
+<style>
+    body {
+        background-color: #e74e63;
+    }
+
+    #topbar {
+        text-align: left;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    #f1 {
+        width: 100%;
+        height: 9%;
+        margin: auto;
+        border-radius: 15px;
+        background-color: rgb(255, 179, 197);
+    }
+
+    #f2 {
+        margin: auto;
+        margin-top: 0px;
+        width: 95%;
+        height: 60%;
+        border-radius: 15px;
+        background-color: rgb(255, 179, 197);
+        font-size: 30px;
+    }
+
+    #user {
+        text-align: right;
+        margin-top: 30px;
+        margin-right: 55px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    input[type="button"] {
+        margin: 20;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        background-color: grey;
+    }
+
+    input[type="button"]:hover {
+        color: black;
+        background-color: rgb(255, 179, 197);
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-color: rgb(204, 204, 177);
+        border-collapse: collapse;
+        border-radius: 30px;
+        width: 100%;
+        height: 80%;
+        margin-top: 45px;
+        /* Overflow-x:scroll;
+        Overflow-y:scroll; */
+    }
+
+    td {
+        /* border: 1px solid #dddddd; */
+        height: 10%;
+        width: 85%;
+        text-align: left;
+        font-size: 30px;
+        padding: 8px;
+        background-color: blanchedalmond;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button{
+        cursor:pointer;
+    }
+
+    button.b {
+        padding: 10px;
+        margin-left: 2px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 12px;
+        color: white;
+        background-color: grey;
+    }
+
+    #home_button {
+        border-radius: 100px;
+        margin-left: 50%;
+        width:300px;
+    }
+
+    #homepage {
+        height: 20%;
+        width: 20%;
+
+    }
+</style>
+
+<body>
+    <center>
+        <div id="topbar">
+            <fieldset id="f1">
+                <div style="float: left;" width="50%">
+                    <img src="D:\VIT\Coding\HTML\LiveTWICE\pics\logo2.jpg" alt="logo">
+                </div>
+                <div style="float: right;" width="50%">
+                    <p id="user">Welcome User</p>
+                </div>
+            </fieldset>
+            <br>
+            <h1>Requests Made:</h1>
+            <fieldset id="f2">
+                <table border="1" class="center">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="b">delete</button>
+                            <button class="b">edit</button>
+                            <button class="b">copy</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="b">delete</button>
+                            <button class="b">edit</button>
+                            <button class="b">copy</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="b">delete</button>
+                            <button class="b">edit</button>
+                            <button class="b">copy</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="b">delete</button>
+                            <button class="b">edit</button>
+                            <button class="b">copy</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="b">delete</button>
+                            <button class="b">edit</button>
+                            <button class="b">copy</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <input type="button" value="Request an organ" onclick="redirect()">
+            <button id="home_button">
+                <a href="D:\VIT\Coding\HTML\LiveTWICE\homepage.html">
+                <img style="width:50px; height:50px" src="D:\VIT\Coding\HTML\LiveTWICE\pics\home.png" alt="homepage_icon">
+            </button>
+        </div>
+        </div>
+    </center>
+    <script>
+        function redirect() {
+            location.replace("D:/VIT/Coding/HTML/LiveTWICE/request_organ1.html");
+        }
+
+    </script>
+</body>
+
+</html>
