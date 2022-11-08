@@ -50,14 +50,19 @@ app.post('/views/signin.ejs', async (req, res) => {
     }
 })
 app.post('/views/donate_organ1.ejs',async(req,res)=>{
-        const donor_name=req.body.pname;
-        const donor_age=req.body.page;
-        const organ_name=req.body.organ;
-        const blood_group=req.body.blood;
-        console.log(donor_name);
-        console.log(donor_age);
-        console.log(organ_name);
-        console.log(blood_group);
+    try{
+        const avail=new Avail({
+            donor_name: req.body.pname,
+            donor_age: req.body.page,
+            organ_name: req.body.organ,
+            blood_group: req.body.blood,
+        })
+        const availableorg = await avail.save();
+        res.status(201).render('donate_organ2.ejs');
+    }catch(error){
+        res.status(400).send(error);
+    }
+        
 
 })
 app.get('/views/requestmade.ejs', (req, res) => {

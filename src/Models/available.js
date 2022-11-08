@@ -1,12 +1,11 @@
 const mongoose = require("mongoose");
 
 const availSchema=new mongoose.Schema({ 
-    don_id: {
-          type:Number,
-          required: true,
-          unique:true,
-          minlength:3
-      },
+    // don_id: {
+    //       type:Number,
+    //       required: true,
+    //       minlength:3
+    //   },
       organ_name:{
           type:String,
           required:true,
@@ -29,5 +28,5 @@ const availSchema=new mongoose.Schema({
       },
 })
 
-const avail_organ = new mongoose.model("Avail", availSchema);
-module.exports = avail_organ;
+const Avail = new mongoose.model("Avail", availSchema);
+module.exports = Avail;
