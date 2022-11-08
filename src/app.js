@@ -115,7 +115,7 @@ app.post('/login', async (req, res) => {
         if (userEmail.Password === pass) {
             res.status(201).render('homepage');
         } else {
-            res.send("Invalid Login Credentials");
+            res.status(400).send("Invalid Login Credentials");
         }
     } catch (error) {
         res.status(400).send("Invalid Login Credentials");
