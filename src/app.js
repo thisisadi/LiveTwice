@@ -3,9 +3,9 @@ const express = require('express')
 const app = express()
 require("./db/conn");
 
-const User = require("./Models/Users");
-const Avail=require("./Models/available");
-const Req=require("./Models/request");
+const User = require("./Models/registered_users");
+const Avail = require("./Models/available");
+const Req = require("./Models/request");
 
 const port = 5050
 
@@ -24,7 +24,11 @@ app.get('', (req, res) => {
     res.render('signin')
 })
 
-app.post('/views/signin.ejs', async (req, res) => {
+app.get('/signin', (req, res) => {
+    res.render('signin')
+})
+
+app.post('/signin', async (req, res) => {
     try {
         const pass = req.body.password;
         const cPass = req.body.confirmPassword;
@@ -42,16 +46,16 @@ app.post('/views/signin.ejs', async (req, res) => {
             res.status(201).render('homepage');
 
         } else {
-            console.log("Password doesn't match!");
+            res.status(400).send("Password doesn't match!");
         }
 
     } catch (error) {
         res.status(400).send(error);
     }
 })
-app.post('/views/donate_organ1.ejs',async(req,res)=>{
-    try{
-        const avail=new Avail({
+app.post('/views/donate_organ1.ejs', async (req, res) => {
+    try {
+        const avail = new Avail({
             donor_name: req.body.pname,
             donor_age: req.body.page,
             organ_name: req.body.organ,
@@ -59,12 +63,11 @@ app.post('/views/donate_organ1.ejs',async(req,res)=>{
         })
         const availableorg = await avail.save();
         res.status(201).render('donate_organ2.ejs');
-    }catch(error){
+    } catch (error) {
         res.status(400).send(error);
     }
-        
-
 })
+
 app.get('/views/requestmade.ejs', (req, res) => {
     res.render('requestmade')
 })
